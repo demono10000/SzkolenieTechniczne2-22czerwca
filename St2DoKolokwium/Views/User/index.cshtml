@@ -1,0 +1,43 @@
+﻿@using St2DoKolokwium.Storage.Dtos
+@model IEnumerable<UserDto>
+
+@{
+
+    ViewBag.Title = "Zapis na Konkurs";
+}
+    
+@if (Model.Any())
+    {
+    <table class="table">
+        <thead class="tab-pane">
+            <tr>
+                <th> Imię</th>
+                <th> Nazwisko</th>
+                <th> Email</th>
+                <th><a class="btn btn-outline-primary" asp-action="Add">Dodaj uczestnika</a></th>
+            </tr>
+        </thead>
+        <tbody class="tab-content">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.LastName</td>
+                    <td>@item.Email</td>
+                    <td>
+                        <form method="post" asp-action="Delete" asp-route-id="@item.Id">
+                            <button type="submit" class="btn btn-link text-danger float-right">Usuń</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    }
+else
+{
+ <p>Brak uczestników konkursu</p>
+    <p>
+        <a class="btn btn-outline-primary" asp-action="Add">Dodaj uczestnika</a>
+    </p>
+}

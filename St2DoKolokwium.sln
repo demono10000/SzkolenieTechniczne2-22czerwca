@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "St2DoKolokwium.UI", "St2DoKolokwium\St2DoKolokwium.UI.csproj", "{CA5BA931-BC72-4FDF-9C71-7F2FB1332936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "St2DoKolokwium.Storage", "St2DoKolokwium.Storage\St2DoKolokwium.Storage.csproj", "{1E11ECC0-4A0D-43E1-B684-5B5194BA585B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5BA931-BC72-4FDF-9C71-7F2FB1332936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5BA931-BC72-4FDF-9C71-7F2FB1332936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5BA931-BC72-4FDF-9C71-7F2FB1332936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5BA931-BC72-4FDF-9C71-7F2FB1332936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E11ECC0-4A0D-43E1-B684-5B5194BA585B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E11ECC0-4A0D-43E1-B684-5B5194BA585B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E11ECC0-4A0D-43E1-B684-5B5194BA585B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E11ECC0-4A0D-43E1-B684-5B5194BA585B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {823979D7-494B-41A6-B291-CACD05EA9037}
+	EndGlobalSection
+EndGlobal

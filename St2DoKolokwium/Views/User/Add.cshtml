@@ -1,0 +1,32 @@
+﻿@using St2DoKolokwium.UI.Models
+@model UserModel
+@{
+    ViewData["Title"] = "Dodaj uczestnika";
+}
+
+<h2>Dodaj uczestnika</h2>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Name">Imię</label>
+        <input asp-for="Name" type="text" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LastName">Nazwisko</label>
+        <input asp-for="LastName" type="text" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" type="text" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <select asp-for="CompetitionTypeId" asp-items="Model.CompetitionTypes" class="form-control">
+            <option value="">Wybierz konkurs</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-outline-primary float-right">Zapisz</button>
+</form>
